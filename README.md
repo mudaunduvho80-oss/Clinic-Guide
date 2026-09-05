@@ -27,6 +27,36 @@ Clinic Guide is a patient-focused website designed to help patients easily acces
 - **Appointments** – Patients can request an appointment
 - **Contact** – Clinic contact information and contact form
 
+  Screenshots
+## Screenshots
+
+### Home Page
+![Home Page](<Screenshot (244).png>)
+
+### Services Page
+![Services Page](<Screenshot (245).png>)
+
+### Appointments page
+![Clinic Guide Page](<Screenshot (246).png>)
+
+### Appointments Page
+![Appointments Page](<Screenshot (247).png>)
+
+### Contact Page
+![Contact Page](<Screenshot (248).png>)
+
+### Emergency Information
+![Screenshot](<Screenshot (249).png>)
+
+Purpose
+
+The purpose of Clinic Guide is to provide patients with an easy way to access important clinic information and request appointments online.
+
+Author
+
+Nduvho Mudau
+
+
 ## Project Structure
 
 ```text
@@ -42,10 +72,4 @@ Clinic Guide/
 │   └── script.js
 └── images/
 
-Purpose
 
-The purpose of Clinic Guide is to provide patients with an easy way to access important clinic information and request appointments online.
-
-Author
-
-Nduvho Mudau
