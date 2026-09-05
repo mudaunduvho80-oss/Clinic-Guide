@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clinic Guide - Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contact-page">
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+
+            <a href="contact.html" class="logo">
+    <img src="logo.jpeg" alt="Clinic Guide Logo">
+</a>
+
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="guide.html">Clinic Guide</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Contact Introduction -->
+        <section>
+
+            <h2>Contact the Clinic</h2>
+
+            <p>
+                Have a question or need assistance?
+                Contact the clinic using the information below.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Information -->
+        <section>
+
+            <h2>Clinic Information</h2>
+
+            <div>
+                <h3>📍 Address</h3>
+
+                <p>
+                    123 Main Street<br>
+                    Johannesburg<br>
+                    South Africa
+                </p>
+            </div>
+
+
+            <div>
+                <h3>📞 Phone</h3>
+
+                <p>
+                    011 123 4567
+                </p>
+            </div>
+
+
+            <div>
+                <h3>📧 Email</h3>
+
+                <p>
+                    info@clinicguide.co.za
+                </p>
+            </div>
+
+
+            <div>
+                <h3>🕐 Opening Hours</h3>
+
+                <p>
+                    Monday - Friday: 08:00 - 17:00
+                </p>
+
+                <p>
+                    Saturday: 08:00 - 13:00
+                </p>
+
+                <p>
+                    Sunday: Closed
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Contact Form -->
+        <section>
+
+            <h2>Send Us a Message</h2>
+
+            <form onsubmit="submitContactForm(event)">
+
+                <div>
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+                <br>
+
+
+                <div>
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+                <br>
+
+
+                <div>
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Type your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+                <br>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Emergency -->
+        <section>
+
+            <h2>🚨 Emergency</h2>
+
+            <p>
+                If you are experiencing a serious or
+                life-threatening emergency, seek immediate
+                medical assistance.
+            </p>
+
+            <p>
+                Do not wait for a response from this website
+                in an emergency.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Clinic Guide. All Rights Reserved.
+        </p>
+
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

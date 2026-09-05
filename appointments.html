@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clinic Guide - Appointments</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="appointments-page">
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+
+            <a href="appointments.html" class="logo">
+    <img src="logo.jpeg" alt="Clinic Guide Logo">
+</a>
+
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="guide.html">Clinic Guide</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Introduction -->
+        <section>
+
+            <h2 id="appointmentTitle">Book an Appointment</h2>
+
+            <p>
+                Complete the form below to request an appointment
+                at the clinic.
+            </p>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- Appointment Form -->
+        <section>
+
+            <h2>Appointment Details</h2>
+
+            <form onsubmit="bookAppointment(event)">
+
+                <!-- Patient Name -->
+                <div>
+                    <label for="fullname">Full Name</label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <br>
+
+                  <p id="appointmentMessage"></p>
+
+
+                <!-- Phone Number -->
+                <div>
+                    <label for="phone">Phone Number</label>
+
+                    <br>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+                <br>
+
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email Address</label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                    >
+                </div>
+
+                <br>
+
+
+                <!-- Service -->
+                <div>
+                    <label for="service">Select Service</label>
+
+                    <br>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">
+                            -- Select a service --
+                        </option>
+
+                        <option value="general">
+                            General Consultation
+                        </option>
+
+                        <option value="pharmacy">
+                            Pharmacy
+                        </option>
+
+                        <option value="laboratory">
+                            Laboratory
+                        </option>
+
+                        <option value="child-health">
+                            Child Health
+                        </option>
+
+                        <option value="family-planning">
+                            Family Planning
+                        </option>
+
+                        <option value="dental">
+                            Dental
+                        </option>
+
+                        <option value="immunization">
+                            Immunization
+                        </option>
+
+                        <option value="mental-health">
+                            Mental Health
+                        </option>
+
+                    </select>
+
+                    <p id="serviceMessage"></p>
+                </div>
+
+                <br>
+
+
+                <!-- Date -->
+                <div>
+                    <label for="date">Preferred Date</label>
+
+                    <br>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                    <p id="dateMessage"></p>
+                </div>
+
+                <br>
+
+
+                <!-- Time -->
+                <div>
+                    <label for="time">Preferred Time</label>
+
+                    <br>
+
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+
+                    <p id="timeMessage"></p>
+                </div>
+
+                <br>
+
+
+                <!-- Reason -->
+                <div>
+                    <label for="reason">
+                        Reason for Appointment
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="5"
+                        placeholder="Briefly describe why you need an appointment"
+                    ></textarea>
+
+                    <p id="reasonMessage"></p>
+                </div>
+
+                <br>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    Book Appointment
+                </button>
+                <p id="bookingMessage"></p>
+
+                <button type="button" onclick="newAppointment()">
+    New Appointment
+</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Appointment Information -->
+        <section>
+
+            <h2>Important Information</h2>
+
+            <p>
+                Please arrive at the clinic a few minutes before
+                your appointment time.
+            </p>
+
+            <p>
+                Bring any required identification, previous medical
+                documents, or medication information.
+            </p>
+
+            <p>
+                If you have a medical emergency, do not wait for
+                an appointment. Seek immediate medical assistance.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Clinic Guide. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
